@@ -1,22 +1,43 @@
-h2 {
-  text-align: center;
-  font-size: 2rem;
-}
-#btnAdd {
-  background-color: black;
-  color: white;
-  font-size: 1rem;
-  padding: 8px;
-  border-radius: 1px;
+h1 {
+    text-align: center;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
 
+.btn {
+    width: 100px;
+    margin: 0 0.5em;
+    padding: 0.6em;
+    border-radius: 10px;
+    color: white;
+}
 
-.ImageList {
-  list-style-type: none;
-  /* width: 200px;
-  height: 200px; */
-  float: left;
-  margin-top: 8px;
-  margin-right: 10px;
+.add-btn {
+    border: 1px solid #14213d;
+    background-color: #14213d;
+}
+
+.delete-btn {
+    border: 1px solid #b31515;
+    background-color: #b31515;
+}
+
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+}
+
+.images-container>li {
+    list-style: none;
+    justify-self: center;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
 }
